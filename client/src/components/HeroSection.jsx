@@ -26,8 +26,8 @@ const HeroSection = () => {
           className="max-h-11 lg:h-11 mt-20"
         />
 
-        <h1 className="text-5xl py-5 md:text-[70px] md:leading-18 font-semibold max-w-110">
-          Money Heist <br /> 
+        <h1 className="text-5xl font-cinematic py-5 md:text-[70px] md:leading-18 max-w-110">
+          Captain America <br /> The first Avenger
         </h1>
 
         <div className="flex justify-start py-2 gap-4 text-gray-300">
@@ -41,7 +41,10 @@ const HeroSection = () => {
         </div>
 
         <p className="max-w-md text-sm pb-10 text-gray-300">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis excepturi architecto neque possimus corrupti, veritatis obcaecati eaque illo! Illum modi, porro doloribus saepe dignissimos neque numquam odit architecto
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          excepturi architecto neque possimus corrupti, veritatis obcaecati
+          eaque illo! Illum modi, porro doloribus saepe dignissimos neque
+          numquam odit architecto
         </p>
 
         <button
