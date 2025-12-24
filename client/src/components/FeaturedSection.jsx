@@ -11,7 +11,7 @@ const FeaturedSection = () => {
   return (
     <div className="px-6 md:px-16 lg:px-24 xl:px-44 overflow-hidden">
       <div className="relative flex item-center justify-between pt-20 pb-10">
-        <BlurCircle top="0" right="-80px" />
+        <BlurCircle top="300px" right="-80px" />
         <p className="text-gray-300 font-medium text-lg">Now Showing</p>
         <button
           onClick={() => navigate("/movies")}

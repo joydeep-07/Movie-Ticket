@@ -12,11 +12,16 @@ const HeroSection = () => {
       className="
     relative flex h-screen flex-col items-start justify-center gap-4
     px-6 md:px-16 lg:px-36
-    bg-[url('/bg.jpg')] bg-no-repeat bg-cover bg-center
+    bg-[url('/backgroundImage.png')] bg-no-repeat bg-cover bg-center
   "
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/30"></div>
+
+      <div
+        className="absolute bottom-0 left-0 w-full h-[200px] 
+                  bg-gradient-to-t from-[#0d0d0d] to-transparent"
+      ></div>
 
       {/* Content */}
       <div className="relative z-10">
@@ -26,8 +31,8 @@ const HeroSection = () => {
           className="max-h-11 lg:h-11 mt-20"
         />
 
-        <h1 className="text-5xl font-cinematic py-5 md:text-[70px] md:leading-18 max-w-110">
-          Captain America <br /> The first Avenger
+        <h1 className="text-5xl font-cinematic py-5 md:text-[70px] md:leading-18 max-w-200">
+          Captain America <br /> The Winter Soldier
         </h1>
 
         <div className="flex justify-start py-2 gap-4 text-gray-300">
