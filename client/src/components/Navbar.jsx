@@ -43,13 +43,13 @@ const Navbar = () => {
         <Link onClick={handleLinkClick} to="/movies">
           Movies
         </Link>
-        <Link onClick={handleLinkClick} to="/favourite">
+        <Link onClick={handleLinkClick} to="/">
           Theaters
         </Link>
         <Link onClick={handleLinkClick} to="/">
           Releases
         </Link>
-        <Link onClick={handleLinkClick} to="/">
+        <Link onClick={handleLinkClick} to="/favourite">
           Favourite
         </Link>
       </div>
