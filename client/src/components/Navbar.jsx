@@ -19,7 +19,10 @@ const Navbar = () => {
     <div className="fixed top-0 left-0 z-50 w-full flex items-center justify-between px-6 md:px-16 lg:px-36 py-5 ">
       {/* Logo */}
       <Link to="/" className="z-50">
-        <img src={assets.logo} className="w-36 h-auto" alt="logo" />
+        {/* <img src={assets.logo} className="w-36 h-auto" alt="logo" /> */}
+        <h1 className="text-3xl font-cinematic">
+          Book<span className="font-cinematic text-red-500/95 mx-1">My</span>Ticket
+        </h1>
       </Link>
 
       {/* Nav Links */}
