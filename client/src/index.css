@@ -41,8 +41,8 @@
 
 * {
   font-family: "Outfit", system-ui, sans-serif;
-  scrollbar-width: thin;
-  scrollbar-color: #787777 #1e1e1e;
+  /* scrollbar-width: thin;
+  scrollbar-color: #787777 #1e1e1e; */
 }
 
 body{
@@ -50,8 +50,8 @@ body{
   background-color: #0d0d0d;
 }
 
-.btn{
-  
+::-webkit-scrollbar{
+  display: none;
 }
 
 
