@@ -4,115 +4,129 @@ import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <section id="contact">
-        <footer className=" pt-16 pb-8">
-          <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-            {/* Brand */}
-            <div>
-              <h2 className="text-white font-cinematic text-2xl mb-4 tracking-wide">
-                Book My Ticket
-              </h2>
-              <p className="text-sm text-gray-400">
-                Passionate MERN Stack Developer creating seamless digital
-                experiences.
+      <footer class="bg-black py-12 px-4 sm:px-6 lg:px-8">
+        <div class="w-full max-w-7xl mx-auto">
+          <div class="flex flex-wrap justify-between gap-y-12 lg:gap-x-8">
+            <div class="w-full md:w-[45%] lg:w-[35%] flex flex-col items-center md:items-start text-center md:text-left">
+              <h1 className="text-3xl font-cinematic">
+                Book
+                <span className="font-cinematic text-red-500/95 mx-1">My</span>
+                Ticket
+              </h1>
+              <div class="w-full max-w-52 h-px mt-2 bg-linear-to-r from-white/60 via-white/25 to-black"></div>
+              <p class="text-sm text-white/60 mt-6 max-w-sm leading-relaxed">
+                PrebuiltUI is a growing collection of beautifully designed,
+                production-ready Tailwind CSS UI components.
               </p>
             </div>
 
-            {/* Skills */}
-            <div>
-              <h4 className="text-cyan-400 font-semibold mb-4 tracking-wide">
-                SKILLS
-              </h4>
-              <ul className="space-y-2 text-sm">
-                <li className="text-white hover:text-cyan-400 transition-colors duration-300 cursor-pointer">
-                  JavaScript / TypeScript
-                </li>
-                <li className="text-white hover:text-cyan-400 transition-colors duration-300 cursor-pointer">
-                  Redux Toolkit
-                </li>
-                <li className="text-white hover:text-cyan-400 transition-colors duration-300 cursor-pointer">
-                  Node.js / Express
-                </li>
-                <li className="text-white hover:text-cyan-400 transition-colors duration-300 cursor-pointer">
-                  MongoDB / MySQL
-                </li>
-                <li className="text-white hover:text-cyan-400 transition-colors duration-300 cursor-pointer">
-                  Tailwind CSS
-                </li>
-              </ul>
+            <div class="w-full md:w-[45%] lg:w-[15%] flex flex-col items-center md:items-start text-center md:text-left">
+              <h3 class="text-sm text-white font-medium">Important Links</h3>
+              <div class="flex flex-col gap-2 mt-6">
+                <a
+                  href="#"
+                  class="text-sm text-white/60 hover:text-white transition-colors"
+                >
+                  Home
+                </a>
+                <a
+                  href="#"
+                  class="text-sm text-white/60 hover:text-white transition-colors"
+                >
+                  About
+                </a>
+                <a
+                  href="#"
+                  class="text-sm text-white/60 hover:text-white transition-colors"
+                >
+                  Portfolio
+                </a>
+                <a
+                  href="#"
+                  class="text-sm text-white/60 hover:text-white transition-colors"
+                >
+                  Contact
+                </a>
+                <a
+                  href="#"
+                  class="text-sm text-white/60 hover:text-white transition-colors"
+                >
+                  FAQ
+                </a>
+              </div>
             </div>
 
-            {/* Contact */}
-            <div>
-              <h4 className="text-cyan-400 font-semibold mb-4 tracking-wide">
-                CONTACT
-              </h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  Email:{" "}
-                  <span className="text-white hover:text-cyan-300 transition-colors duration-300 cursor-pointer">
-                    joydeeprnp8821@gmail.com
-                  </span>
-                </li>
-                <li>
-                  Phone:{" "}
-                  <span className="text-white hover:text-cyan-300 transition-colors duration-300 cursor-pointer">
-                    9635172639
-                  </span>
-                </li>
-                <li>
-                  Location:{" "}
-                  <span className="text-white hover:text-cyan-300 transition-colors duration-300 cursor-pointer">
-                    Asansol, India
-                  </span>
-                </li>
-              </ul>
+            <div class="w-full md:w-[45%] lg:w-[15%] flex flex-col items-center md:items-start text-center md:text-left">
+              <h3 class="text-sm text-white font-medium">Social Links</h3>
+              <div class="flex flex-col gap-2 mt-6">
+                <a
+                  href="#"
+                  class="text-sm text-white/60 hover:text-white transition-colors"
+                >
+                  Twitter
+                </a>
+                <a
+                  href="#"
+                  class="text-sm text-white/60 hover:text-white transition-colors"
+                >
+                  Instagram
+                </a>
+                <a
+                  href="#"
+                  class="text-sm text-white/60 hover:text-white transition-colors"
+                >
+                  Youtube
+                </a>
+                <a
+                  href="#"
+                  class="text-sm text-white/60 hover:text-white transition-colors"
+                >
+                  Linkedin
+                </a>
+              </div>
             </div>
 
-            {/* Socials */}
-            <div>
-              <h4 className="text-cyan-400 font-semibold mb-4 tracking-wide">
-                SOCIALS
-              </h4>
-              <div className="flex space-x-4 text-2xl">
-                <a
-                  href="https://github.com/joydeep-07"
-                  target="blank"
-                  className="hover:text-cyan-400 transition"
+            <div class="w-full md:w-[45%] lg:w-[25%] flex flex-col items-center md:items-start text-center md:text-left">
+              <h3 class="text-sm text-white font-medium">Subscribe for news</h3>
+              <div class="flex items-center border gap-2 border-white/20 h-13 max-w-80 w-full rounded-full overflow-hidden mt-4">
+                <input
+                  type="email"
+                  placeholder="Enter your email.."
+                  class="w-full h-full pl-6 outline-none text-sm bg-transparent text-white placeholder-white/60 placeholder:text-xs"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="bg-linear-to-b from-[#5623D8] to-[#7B53E2] active:scale-95 transition w-56 h-10 rounded-full text-sm text-white cursor-pointer mr-1.5"
                 >
-                  <FaGithub />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/joydeep-paul-06b37926a"
-                  target="blank"
-                  className="hover:text-cyan-400 transition"
-                >
-                  <FaLinkedin />
-                </a>
-                <a
-                  href="https://www.facebook.com/joydeep.paul.568089"
-                  target="blank"
-                  className="hover:text-cyan-400 transition"
-                >
-                  <FaFacebook />
-                </a>
-                <a
-                  href="https://www.instagram.com/mr.paul_16"
-                  target="blank"
-                  className="hover:text-cyan-400 transition"
-                >
-                  <FaInstagram />
-                </a>
+                  Subscribe
+                </button>
               </div>
             </div>
           </div>
 
-          {/* Bottom */}
-          <div className="mt-12 text-center text-sm text-gray-500 border-t border-[#1e293b] pt-6">
-            © {new Date().getFullYear()} Joydeep Paul. All rights reserved.
+          <div class="w-full h-px mt-16 mb-4 bg-linear-to-r from-black via-white/25 to-black"></div>
+
+          <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-white/60">© 2025 PrebuiltUI</p>
+            <div class="flex items-center gap-6">
+              <a
+                href="#"
+                class="text-xs text-white/60 hover:text-white transition-colors"
+              >
+                Terms & Conditions
+              </a>
+              <div class="w-px h-4 bg-white/20"></div>
+              <a
+                href="#"
+                class="text-xs text-white/60 hover:text-white transition-colors"
+              >
+                Privacy Policy
+              </a>
+            </div>
           </div>
-        </footer>
-      </section>
+        </div>
+      </footer>
     </>
   );
 };
