@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { dummyDateTimeData, dummyShowsData } from "../assets/assets";
 import BlurCircle from "../components/BlurCircle";
-import { StarIcon } from "lucide-react";
+import { Heart, PlayCircleIcon, StarIcon } from "lucide-react";
 import timeFormat from "../lib/timeFormat";
 
 const MovieDetails = () => {
@@ -58,6 +58,22 @@ const MovieDetails = () => {
             {show.movie.genres.map((g) => g.name).join(", ")} •{" "}
             {show.movie.release_date.split("-")[0]}
           </p>
+
+          <div className="flex items-center flex-wrap gap-4 mt-4">
+            <button className="flex items-center gap-2 px-7 py-3 text-sm bg-gray-800 hover:bg-gray-900 transition rounded-md font-medium cursor-pointer active:scale-95">
+              <PlayCircleIcon className="w-5 h-5" />
+              Watch Taililer
+            </button>
+            <a
+              className="flex items-center gap-2 px-7 py-3 text-sm bg-primary hover:bg-primary-dull transition rounded-md font-medium cursor-pointer active:scale-95"
+              href=""
+            >
+              Buy Tickets
+            </a>
+            <button>
+              <Heart className={`w-5 h-5`} />
+            </button>
+          </div>
         </div>
       </div>
     </div>

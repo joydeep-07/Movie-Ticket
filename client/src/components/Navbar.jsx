@@ -21,8 +21,11 @@ const Navbar = () => {
       <Link to="/" className="z-50">
         {/* <img src={assets.logo} className="w-36 h-auto" alt="logo" /> */}
         <h1 className="text-3xl font-cinematic">
-          Book<span className="font-cinematic text-red-500/95 mx-1">My</span>Ticket
+          Book
+          <span className="font-cinematic text-red-500/95 mx-1">My</span>
+          Ticket
         </h1>
+        <div class="w-full max-w-52 h-px mt-1 bg-linear-to-r from-white/60 via-white/25 to-transparent"></div>
       </Link>
 
       {/* Nav Links */}
