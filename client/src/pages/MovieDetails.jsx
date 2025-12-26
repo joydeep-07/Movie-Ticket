@@ -66,7 +66,7 @@ const MovieDetails = () => {
             </button>
             <a
               className="flex items-center gap-2 px-7 py-3 text-sm bg-primary hover:bg-primary-dull transition rounded-md font-medium cursor-pointer active:scale-95"
-              href=""
+              href="#dateSelect"
             >
               Buy Tickets
             </a>
@@ -74,6 +74,18 @@ const MovieDetails = () => {
               <Heart className={`w-5 h-5`} />
             </button>
           </div>
+        </div>
+      </div>
+
+      <p className="text-lg font-medium mt-20">Your Favourite Cast</p>
+      <div className="overflow-x-auto no-scrollbar mt-8 pb-4">
+        <div className="flex items-center gap-4 w-max px-4">
+          {show.movie.casts.slice(0, 12).map((cast, index) => (
+            <div key={index} className="flex flex-col items-center text-center">
+              <img src={cast.profile_path} className="rounded-full h-20 md:h-20 aspect-square object-cover" alt="" />
+              <p className="font-medium text-xs mt-3">{cast.name}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
