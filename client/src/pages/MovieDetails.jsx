@@ -70,7 +70,7 @@ const MovieDetails = () => {
             >
               Buy Tickets
             </a>
-            <button>
+            <button className="bg-gray-700 p-2.5 rounded-full transition cursor-pointer active:scale-95">
               <Heart className={`w-5 h-5`} />
             </button>
           </div>
